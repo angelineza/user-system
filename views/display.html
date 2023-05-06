@@ -5,19 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display page</title>
+    <link rel="stylesheet" href="views.css">
 </head>
 <body>
     <div class="display">
-        <h2>List of registered users</h2>
-        <table>
-        <tr>
-            <th>User id</th>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Password</th>
-            <th>Operations</th>
-        </tr>
-        </table>
+        <form action="http://localhost:5000/allusers" method="get">
+            <input type="submit" value="Get all users">
+        </form>
     </div>
 </body>
 </html>

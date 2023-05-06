@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
+    <link rel="stylesheet" href="views.css">
 </head>
 <body>
-    <div>
-        <button><a href="">Delete the user</a></button>
-    </div>
-    <div>
-        <button><a href="signup.html">Sign up</a></button>
-    </div>
-    <h2>Login form</h2>
-    <form action="" method="post">
-        <input type="text" placeholder="Enter your username" name="username">
-        <input type="password" placeholder="Enter your password" name="password">
-        <input type="submit" value="Login" name="login">
+        <div class="nav">
+            <ul>
+            <li><a href="signup.html">Sign up</a></li>
+        </ul>
+        </div>
+    <div class="form">
+    <h2>Login form</h2><br><br>
+    <form action='http://localhost:5000/login' method="post">
+        <input type="text" placeholder="Enter your email" name="email"><br>
+        <input type="password" placeholder="Enter your password" name="password"><br>
+        <input type="submit" value="Login" name="login"><br>
+        <caption><a href="signup.html">Not registered yet? Signup</a></caption>
     </form>
+    </div>
 </body>
 </html>

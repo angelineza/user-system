@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 const config=require('config');
 const dotenv=require('dotenv');
-const port=4500;
+const port=5000;
 const bodyParser=require('body-parser');
 dotenv.config({path:'./.env'});
 app.use(express.json());
@@ -19,7 +19,7 @@ app.listen(port,()=>{
     console.log(`server running on port ${port}....`);
 });
 
-const router=require('./routes/userRoutes');
-app.use(router);
+const routes=require('./routes/userRoutes');
+app.use(routes);
 
 app.get('/',(req,res)=>{res.send('Welcome to our system!')});
